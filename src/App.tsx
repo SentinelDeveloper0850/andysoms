@@ -1,14 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/home';
+import Blog from './pages/blog';
+import Store from './pages/store';
 
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>Welcome to AndySoms!</p>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/store" element={<Store />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
