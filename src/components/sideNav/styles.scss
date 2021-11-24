@@ -16,7 +16,7 @@
         padding: 0.75rem;
         border-bottom: 1px solid #ccc;
 
-        &:hover {
+        &:hover, &.selected {
           background: #202020;
           color: white;
         }
