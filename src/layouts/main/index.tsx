@@ -1,5 +1,6 @@
 import AppBar from "../../components/appBar";
-import SideNav from "../../components/sideNav"
+import SideNav from "../../components/sideNav";
+import './styles.scss';
 
 interface IProps {
   children: any;
